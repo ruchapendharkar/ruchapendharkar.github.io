@@ -1,18 +1,24 @@
 # Site Build Settings
 
-paginate:            5
+paginate: 5
+paginate_path: "/blog/page:num"
 
 # Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           /:title
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+markdown: kramdown
+highlighter: rouge
+permalink: /:title
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
-title:               'Rucha Pendharkar'
-description:         'Almost always a work in progress'
-author:              'Rucha Pendharkar'
+# Site Info
+title: "Rucha Pendharkar"
+description: "Almost always a work in progress"
+author: "Rucha Pendharkar"
 
-# Navigation
+# Navigation (used in _data/settings.yml if Lagrange is configured that way)
 navigation:
   - title: "Scribbles"
     url: "/blog/"
