@@ -19,7 +19,6 @@ layout: default
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>
     </header>
-
     <article class="post-content">
       {{ post.excerpt }}
     </article>
@@ -29,10 +28,14 @@ layout: default
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">{{ site.data.settings.pagination.previous_page }}</a>
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">
+        {{ site.data.settings.pagination.previous_page }}
+      </a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}" class="next">{{ site.data.settings.pagination.next_page }}</a>
+      <a href="{{ paginator.next_page_path | relative_url }}" class="next">
+        {{ site.data.settings.pagination.next_page }}
+      </a>
     {% endif %}
   </div>
 {% endif %}
