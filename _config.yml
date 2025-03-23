@@ -1,0 +1,28 @@
+# Site Build Settings
+
+paginate:            5
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           /:title
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+
+title:               'My Corner'
+description:         'A quiet place for my words, art, and finds'
+author:              'Your Name' # replace with your name
+
+# Navigation
+navigation:
+  - title: "My Corner"
+    url: "/"
+  - title: "Scribbles"
+    url: "/blog/"
+  - title: "Timeline"
+    url: "/timeline/"
+  - title: "Me"
+    url: "/me/"
+
+# Feed configuration (optional)
+# feed:
+#   path: rss-feed.xml
