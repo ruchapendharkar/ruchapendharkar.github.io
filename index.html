@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Me"
 permalink: /
 ---
 <h1>Hi, I'm Rucha! </h1> 
@@ -10,3 +9,7 @@ permalink: /
 </p>
 
 <p>I don't exactly know what this will become — and that's kind of the point.</p>
+
+{% for post in site.posts %}
+  <p>{{ post.title }} — {{ post.date }}</p>
+{% endfor %}
