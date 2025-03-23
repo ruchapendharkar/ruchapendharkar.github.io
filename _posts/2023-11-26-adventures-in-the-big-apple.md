@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "Adventures in the Big Apple: Rainy Sprints, Brandy-Infused Bus Rides, and the Heroic Towel"
+title: "Adventures in the Big Apple"
+subtitle: "Rainy Sprints, Brandy-Infused Bus Rides, and the Heroic Towel"
 date: 2023-11-26
 ---
 
-I’ve never had the quintessential New York tourist experience. Midnight strolls in Times Square, dollar pizza indulgences, picnics in Central Park, or encounters with giant rodents in the subway are still unchecked on my list; despite having friends in New Jersey who proudly call themselves New Yorkers (akin to Pimpri Chinchwad residents claiming to be Punekars). I'm well aware of the skepticism from genuine locals. But, I digress. My friends persistently rave about the thrill of New York – “Rucha, you never get bored in New York,” “There’s so much to do!” and the classic “The people, Rucha! The people, the energy, and the vibes!” The adrenaline junkie in me was curious, craving an adventure. And boy, adventure did I get.
+I’ve never had the quintessential New York tourist experience.
+
+Midnight strolls in Times Square, dollar pizza indulgences, picnics in Central Park, or encounters with giant rodents in the subway are still unchecked on my list; despite having friends in New Jersey who proudly call themselves New Yorkers (akin to Pimpri Chinchwad residents claiming to be Punekars). I'm well aware of the skepticism from genuine locals. But, I digress. My friends persistently rave about the thrill of New York – “Rucha, you never get bored in New York,” “There’s so much to do!” and the classic “The people, Rucha! The people, the energy, and the vibes!” The adrenaline junkie in me was curious, craving an adventure. And boy, adventure did I get.
 
 
 It was the Sunday after Thanksgiving. I was driving home from Virginia with a couple of friends. We had just spent the week eating, playing board games, lazing around, and eating more - celebrating the true spirit of Thanksgiving. I was supposed to catch a late afternoon bus from the Port Authority back to Boston. We hit traffic when we reached Delaware around noon, and I felt tense. I’ve seen my fair share of traffic living in Boston, Pune, and Bengaluru (a while). My friend was supposed to drop me off at Newark Penn Station, and catching my bus now seemed far-fetched. I wasted time contemplating if I should reschedule my bus to a later time. All of the tickets were sold out. I could not miss work the next day and needed to be home at any cost. I kept refreshing the app in frustration and suddenly saw an open seat on the 6:30 PM bus! I quickly booked it. The bus was from Chinatown, and no one I knew had ever used that service. I’d reach Boston just before midnight. The slight sense of relief I had got, drained away at the thought of explaining these potentially risky travel arrangements to my parents back in India. I called my dad and gave him the necessary details, and I was surprised to see him quite okay with my decision, or maybe he was sleepy and did not fully register what I told him. Either way, I was grateful and felt pretty confident. Now, to reach New York… 
