@@ -4,7 +4,7 @@ title: "Timeline"
 permalink: /timeline/
 ---
 
-[My Resume (PDF)](/resume.pdf)
+[My Resume (PDF)](/assets/resume.pdf)
 
 ---
 
