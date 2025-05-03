@@ -1,0 +1,10 @@
+title: Rucha Pendharkar
+description: Rucha's Website
+author: Rucha Pendharkar
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  skin: dark
