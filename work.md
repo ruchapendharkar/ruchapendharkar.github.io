@@ -2,13 +2,16 @@
 layout: page
 title: Work
 permalink: /work/
-description: "Robotics and Systems Integration with expertise in autonomous systems, sensor fusion, and control algorithms."
 ---
 
 ## About Me
 
 <div class="about-section">
-  <p>I'm a robotics engineer specializing in autonomous systems, sensor fusion, and systems integration. With a Master's degree in Robotics from Northeastern University and practical experience at Shield AI and MORSE Corp, I bring technical expertise in developing and optimizing robotic platforms, particularly unmanned aerial systems (UAS). My work combines hardware integration, software development, and performance optimization to create reliable autonomous systems.</p>
+<p>I work at the intersection of robotics, systems, and problem-solving, the kind where things don’t always go as planned, and that’s exactly what makes it interesting.
+
+I’ve been lucky to work closely with real robots (mostly flying ones), learning how to test, debug, and improve complex systems that live beyond just code — systems that move, sense, decide, and interact with the real world. I love the mix of structure and unpredictability in robotics, and how it forces you to think across hardware, software, environments, and edge cases.
+
+I run on curiosity and figuring out why something didn’t behave the way it should, how to make it better, and how to prevent it from breaking next time. I enjoy roles that are hands-on, collaborative, and challenge me to keep learning, especially in high-stakes or high-complexity systems.</p>
 </div>
 
 <hr class="divider">
@@ -162,11 +165,8 @@ description: "Robotics and Systems Integration with expertise in autonomous syst
 
 <div class="contact-section">
   <ul class="contact-list">
-    <li><i class="fas fa-envelope"></i> <a href="mailto:pendharkar.r@northeastern.edu">pendharkar.r@northeastern.edu</a></li>
-    <li><i class="fas fa-phone"></i> (857)-313-5141</li>
     <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/rucha-pendharkar/" target="_blank">linkedin.com/in/rucha-pendharkar</a></li>
     <li><i class="fab fa-github"></i> <a href="https://github.com/ruchapendharkar" target="_blank">github.com/ruchapendharkar</a></li>
-    <li><i class="fas fa-map-marker-alt"></i> Boston, MA</li>
   </ul>
 </div>
 
