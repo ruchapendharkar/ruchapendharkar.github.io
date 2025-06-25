@@ -21,23 +21,36 @@ I try to take pictures sometimes.
 </div>
 
 <style>
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
+.photo-masonry {
+  column-count: 3;
+  column-gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
 }
 
-.photo-grid img {
+.photo-masonry img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  margin-bottom: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: block;
+  break-inside: avoid;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   transition: transform 0.2s;
 }
 
-.photo-grid img:hover {
-  transform: scale(1.02);
+.photo-masonry img:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+  .photo-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-masonry {
+    column-count: 1;
+  }
 }
 </style>
