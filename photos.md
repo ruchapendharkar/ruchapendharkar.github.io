@@ -17,27 +17,25 @@ I try to take pictures sometimes.
   <img src="/assets/photos/8.jpg" alt="Photo 8"/>
   <img src="/assets/photos/9.jpg" alt="Photo 9">
   <img src="/assets/photos/10.jpg" alt="Photo 10"/>
-  <img src="/assets/photos/11.jpg" alt="Photo 11"/>
+  <img src="/assets/photos/11.jpg" alt=Photo 11>
 </div>
 
 <style>
-.photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-auto-rows: 10px;
-  gap: 10px;
-}
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
 
-.photo-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
-}
+  .photo-grid img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+  }
 
-.photo-gallery img:hover {
-  transform: scale(1.02);
-}
+  .photo-grid img:hover {
+    transform: scale(1.03);
+  }
 </style>
