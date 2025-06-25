@@ -49,7 +49,7 @@ I run on curiosity and figuring out why something didn’t behave the way it sho
     <p class="job-title">Systems Software and Test Engineer | February 2025 – Present</p>
   </div>
   <ul>
-    <li>Develop and maintain code for interfacing autonomy modules with test infrastructure, ensuring seamless communication between simulation and real-world systems </li>
+    <li>Develop and maintain code for interfacing autonomy modules with test infrastructure</li>
     <li>Contribute to the integration and validation of autonomous flight systems, working across software, hardware, and simulation environments</li>
     <li>Investigate and resolve integration issues spanning code, configuration, and platform behavior</li>
     <li>Collaborate with cross-functional teams to improve system stability, traceability, and readiness for field deployment</li>
