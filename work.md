@@ -46,11 +46,11 @@ I run on curiosity and figuring out why something didn’t behave the way it sho
 <div class="experience-item">
   <div class="experience-header">
     <h3>Shield AI | San Diego, CA</h3>
-    <p class="job-title">Systems Software Test Engineer | January 2025 – Present</p>
+    <p class="job-title">Systems Software and Test Engineer | February 2025 – Present</p>
   </div>
   <ul>
+    <li>Develop and maintain code for interfacing autonomy modules with test infrastructure, ensuring seamless communication between simulation and real-world systems </li>
     <li>Contribute to the integration and validation of autonomous flight systems, working across software, hardware, and simulation environments</li>
-    <li>Design and maintain software interfaces and internal tooling to support communication between autonomy modules and test infrastructure</li>
     <li>Investigate and resolve integration issues spanning code, configuration, and platform behavior</li>
     <li>Collaborate with cross-functional teams to improve system stability, traceability, and readiness for field deployment</li>
   </ul>

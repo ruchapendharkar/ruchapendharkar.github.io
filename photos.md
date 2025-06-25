@@ -11,36 +11,27 @@ I try to take pictures sometimes.
   <img src="/assets/photos/2.jpg" alt="Photo 2" />
   <img src="/assets/photos/3.jpg" alt="Photo 3" />
   <img src="/assets/photos/4.jpg" alt="Photo 4" />
-  <img src="/assests/photos/5.jpg" alt="Photo 5">
-  <img src="/assests/photos/6.jpg" alt="Photo 6">
-  <img src="/assests/photos/7.jpg" alt="Photo 7">
+  <img src="/assests/photos/5.jpg" alt="Photo 5" />
+  <img src="/assests/photos/6.jpg" alt="Photo 6" />
+  <img src="/assests/photos/7.jpg" alt="Photo 7" />
 </div>
 
 <style>
-.photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
 
-.photo-tile {
-  aspect-ratio: 3 / 4;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  background-color: #1c1c1c;
-}
+  .photo-grid img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+  }
 
-.photo-tile img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  display: block;
-}
-
-.photo-tile img:hover {
-  transform: scale(1.05);
-}
+  .photo-grid img:hover {
+    transform: scale(1.03);
+  }
 </style>
