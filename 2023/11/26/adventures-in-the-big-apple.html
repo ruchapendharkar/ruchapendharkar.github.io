@@ -1,4 +1,249 @@
-<p>I’ve never had the quintessential New York tourist experience.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventures in the Big Apple — Rucha Pendharkar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:            #17130f;
+      --surface:       #211c18;
+      --surface-hover: #2a2420;
+      --accent:        #6ea8d8;
+      --accent-warm:   #d4a464;
+      --accent-dim:    rgba(110, 168, 216, 0.10);
+      --accent-border: rgba(110, 168, 216, 0.28);
+      --text:          #ede8e2;
+      --text-muted:    #9a938c;
+      --text-faint:    #5e5853;
+      --border:        rgba(237, 232, 226, 0.07);
+      --border-soft:   rgba(237, 232, 226, 0.11);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(23, 19, 15, 0.82);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-nav {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 1.1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-logo:hover { color: var(--accent); }
+
+    .nav-links { list-style: none; display: flex; gap: 0.15rem; }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+
+    /* ── Footer ── */
+    .site-main { flex: 1; }
+
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      color: var(--text-faint);
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Responsive nav ── */
+    @media (max-width: 600px) {
+      .site-nav { padding: 0.9rem 1.25rem; }
+      .nav-links a { padding: 0.3rem 0.5rem; font-size: 0.75rem; }
+    }
+  </style>
+
+  <style>
+    /* ── Post wrapper ── */
+    .post-wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+    }
+
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      transition: color 0.2s;
+    }
+    .post-back:hover { color: var(--accent); }
+
+    .post-header { margin-bottom: 3rem; }
+
+    .post-header time {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .post-header h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.22;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+    }
+
+    .post-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.65;
+      font-style: italic;
+    }
+
+    /* ── Article body ── */
+    .post-body {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text-muted);
+    }
+
+    .post-body p { margin-bottom: 1.5rem; }
+    .post-body p:last-child { margin-bottom: 0; }
+
+    .post-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .post-body strong { color: var(--text); font-weight: 600; }
+    .post-body em { font-style: italic; color: var(--text); }
+
+    .post-body ol, .post-body ul {
+      padding-left: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .post-body li { margin-bottom: 0.5rem; }
+
+    .post-body h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .post-body h3 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+      margin: 2rem 0 0.75rem;
+    }
+
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: 0.5rem 1.25rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .post-body hr {
+      margin: 2.5rem 0;
+      border: 0;
+      height: 1px;
+      background: var(--border-soft);
+    }
+
+    @media (max-width: 600px) {
+      .post-wrap { padding: 2.5rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+    <header class="site-header">
+    <nav class="site-nav">
+      <a href="/" class="nav-logo">Rucha Pendharkar</a>
+      <ul class="nav-links">
+        <li><a href="/work/">Work</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/photos/">Photos</a></li>
+        <li><a href="/resume.pdf">Résumé ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <article class="post-wrap">
+      <a href="/blog/" class="post-back">← Back to blog</a>
+      <header class="post-header">
+        <time>November 26, 2023</time>
+        <h1>Adventures in the Big Apple</h1>
+        <p class="post-subtitle">Rainy Sprints, Brandy-Infused Bus Rides, and the Heroic Towel</p>
+      </header>
+      <div class="post-body">
+        <p>I’ve never had the quintessential New York tourist experience.</p>
 
 <p>Midnight strolls in Times Square, dollar pizza indulgences, picnics in Central Park, or encounters with giant rodents in the subway are still unchecked on my list; despite having friends in New Jersey who proudly call themselves New Yorkers (akin to Pimpri Chinchwad residents claiming to be Punekars). I'm well aware of the skepticism from genuine locals. But, I digress. My friends persistently rave about the thrill of New York – “Rucha, you never get bored in New York,” “There’s so much to do!” and the classic “The people, Rucha! The people, the energy, and the vibes!” The adrenaline junkie in me was curious, craving an adventure. And boy, adventure did I get.</p>
 
@@ -25,3 +270,13 @@ I controlled myself not to laugh; those who know me well, know how hard it is fo
   <li>Revenge might be sweet, but it’s even sweeter when your makeup is on point.</li>
   <li>Quoting the great Douglas Adams - A towel is about the most massively useful thing an interstellar hitchhiker can have.</li>
 </ol>
+
+      </div>
+    </article>
+  </main>
+    <footer class="site-footer">
+    &copy; 2026 Rucha Pendharkar
+  </footer>
+
+</body>
+</html>
