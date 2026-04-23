@@ -1,0 +1,98 @@
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:            #17130f;
+      --surface:       #211c18;
+      --surface-hover: #2a2420;
+      --accent:        #6ea8d8;
+      --accent-warm:   #d4a464;
+      --accent-dim:    rgba(110, 168, 216, 0.10);
+      --accent-border: rgba(110, 168, 216, 0.28);
+      --text:          #ede8e2;
+      --text-muted:    #9a938c;
+      --text-faint:    #5e5853;
+      --border:        rgba(237, 232, 226, 0.07);
+      --border-soft:   rgba(237, 232, 226, 0.11);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(23, 19, 15, 0.82);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-nav {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 1.1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-logo:hover { color: var(--accent); }
+
+    .nav-links { list-style: none; display: flex; gap: 0.15rem; }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); background: var(--surface); }
+
+    /* ── Footer ── */
+    .site-main { flex: 1; }
+
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      color: var(--text-faint);
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Responsive nav ── */
+    @media (max-width: 600px) {
+      .site-nav { padding: 0.9rem 1.25rem; }
+      .nav-links a { padding: 0.3rem 0.5rem; font-size: 0.75rem; }
+    }
+  </style>

@@ -20,23 +20,3 @@ I try to take pictures sometimes.
   <img src="/assets/photos/11.jpg" alt="Photo 11"/>
   <img src="/assets/photos/14.jpg" alt="Photo 12"/>
 </div>
-
-<style>
-  .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .photo-grid img {
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease;
-  }
-
-  .photo-grid img:hover {
-    transform: scale(1.03);
-  }
-</style>

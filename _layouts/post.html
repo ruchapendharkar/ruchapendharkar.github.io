@@ -1,0 +1,145 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} — Rucha Pendharkar</title>
+  {% include head-common.html %}
+  <style>
+    /* ── Post wrapper ── */
+    .post-wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+    }
+
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      transition: color 0.2s;
+    }
+    .post-back:hover { color: var(--accent); }
+
+    .post-header { margin-bottom: 3rem; }
+
+    .post-header time {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .post-header h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.22;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+    }
+
+    .post-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-weight: 300;
+      line-height: 1.65;
+      font-style: italic;
+    }
+
+    /* ── Article body ── */
+    .post-body {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text-muted);
+    }
+
+    .post-body p { margin-bottom: 1.5rem; }
+    .post-body p:last-child { margin-bottom: 0; }
+
+    .post-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .post-body strong { color: var(--text); font-weight: 600; }
+    .post-body em { font-style: italic; color: var(--text); }
+
+    .post-body ol, .post-body ul {
+      padding-left: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .post-body li { margin-bottom: 0.5rem; }
+
+    .post-body h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text);
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .post-body h3 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text);
+      margin: 2rem 0 0.75rem;
+    }
+
+    .post-body blockquote {
+      border-left: 3px solid var(--accent);
+      margin: 1.5rem 0;
+      padding: 0.5rem 1.25rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    .post-body hr {
+      margin: 2.5rem 0;
+      border: 0;
+      height: 1px;
+      background: var(--border-soft);
+    }
+
+    @media (max-width: 600px) {
+      .post-wrap { padding: 2.5rem 1.25rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+  {% include nav-common.html %}
+  <main class="site-main">
+    <article class="post-wrap">
+      <a href="/blog/" class="post-back">← Back to blog</a>
+      <header class="post-header">
+        <time>{{ page.date | date: "%B %d, %Y" }}</time>
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+      </header>
+      <div class="post-body">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+  {% include footer-common.html %}
+</body>
+</html>
